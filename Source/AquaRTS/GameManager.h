@@ -16,10 +16,13 @@ class AQUARTS_API AGameManager : public AGameModeBase
 
 public:
     UPROPERTY(BlueprintReadWrite, Category = "RTS")
-    TArray<AActor*> SelectedUnits;
+    TArray<AActor*> TotalUnits;
 
     UPROPERTY(BlueprintReadWrite, Category = "RTS")
-    int32 PlayerResources = 0;
+    int32 PlayerFood = 0;
+
+    UPROPERTY(BlueprintReadWrite, Category = "RTS")
+    int32 PlayerMineral = 0;
 
     UPROPERTY(BlueprintReadWrite, Category = "RTS")
     FString Objective;

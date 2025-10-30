@@ -24,7 +24,3 @@ void AFarm::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-
-void AFarm::CreateTrops()
-{
-}

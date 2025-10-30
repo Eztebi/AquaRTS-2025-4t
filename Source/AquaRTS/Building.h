@@ -27,10 +27,14 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	UFUNCTION(BlueprintCallable, Category = "Building")
-	virtual void BuildBuilding();
-	UFUNCTION(BlueprintCallable, Category = "Building")
-	virtual void CreateTrops();
+	UFUNCTION(BlueprintNativeEvent, Category = "Building")
+	void BuildBuilding();
+	virtual void BuildBuilding_Implementation();
+
+	UFUNCTION(BlueprintNativeEvent, Category = "Building")
+	void CreateTrops();
+	virtual void CreateTrops_Implementation();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;

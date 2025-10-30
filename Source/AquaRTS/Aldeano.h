@@ -6,7 +6,7 @@
 #include "CharacterRTS.h"
 #include "Aldeano.generated.h"
 
-UCLASS(public)
+UCLASS()
 class AQUARTS_API AAldeano : public ACharacterRTS
 {
 	GENERATED_BODY()
@@ -14,14 +14,14 @@ class AQUARTS_API AAldeano : public ACharacterRTS
 public:
 	// Sets default values for this character's properties
 	AAldeano();
-	UFUNCTION(BlueprintCallable, Category = "Aldeano")
-	void HarvestFood();
-	UFUNCTION(BlueprintCallable, Category = "Aldeano")
-	void HarvestMinerals();
-	UFUNCTION(BlueprintCallable, Category = "Aldeano")
-	void ReturnHome();
-	UFUNCTION(BlueprintCallable, Category = "Aldeano")
-	void Die();
+	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
+	//void HarvestFood();
+	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
+	//void HarvestMinerals();
+	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
+	//void ReturnHome();
+	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
+	//void Die();
 
 
 };

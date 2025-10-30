@@ -18,11 +18,11 @@ void ABuilding::BeginPlay()
 	
 }
 
-void ABuilding::BuildBuilding()
+void ABuilding::BuildBuilding_Implementation()
 {
 }
 
-void ABuilding::CreateTrops()
+void ABuilding::CreateTrops_Implementation()
 {
 }
 

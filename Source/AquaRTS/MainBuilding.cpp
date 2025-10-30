@@ -25,6 +25,3 @@ void AMainBuilding::Tick(float DeltaTime)
 
 }
 
-void AMainBuilding::CreateTrops()
-{
-}

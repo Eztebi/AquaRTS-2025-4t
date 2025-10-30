@@ -9,18 +9,3 @@ AAldeano::AAldeano()
 	movementSpeed = 10;
 }
 
-void AAldeano::HarvestFood()
-{
-}
-
-void AAldeano::HarvestMinerals()
-{
-}
-
-void AAldeano::ReturnHome()
-{
-}
-
-void AAldeano::Die()
-{
-}

@@ -33,13 +33,13 @@ void ACharacterRTS::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 }
 
-void ACharacterRTS::RecieveDamage(float damage)
+void ACharacterRTS::ReceiveDamage_Implementation(float Damage)
 {
-	health -= damage;
-	if (health <= 0) Destroy();
 }
 
-void ACharacterRTS::Move()
+void ACharacterRTS::Move_Implementation()
 {
 }
+
+
 

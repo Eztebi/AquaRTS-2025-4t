@@ -39,11 +39,13 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	//recibir danio
-	UFUNCTION(BlueprintCallable, Category = "Trop")
-	virtual void RecieveDamage(float damage);
+	UFUNCTION(BlueprintNativeEvent, Category = "Troop")
+	void ReceiveDamage(float Damage);
+	virtual void ReceiveDamage_Implementation(float Damage);
 
 	//mover
-	UFUNCTION(BlueprintCallable, Category = "Trop")
-	virtual void Move();
+	UFUNCTION(BlueprintNativeEvent, Category = "Troop")
+	void Move();
+	virtual void Move_Implementation();
 
 };
