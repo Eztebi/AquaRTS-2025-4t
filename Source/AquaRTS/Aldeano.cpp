@@ -9,3 +9,15 @@ AAldeano::AAldeano()
 	movementSpeed = 10;
 }
 
+//void AAldeano::BuildBuilding()
+//{
+//}
+//
+//void AAldeano::Harvest()
+//{
+//}
+//
+//void AAldeano::Die()
+//{
+//}
+

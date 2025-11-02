@@ -14,13 +14,14 @@ class AQUARTS_API AAldeano : public ACharacterRTS
 public:
 	// Sets default values for this character's properties
 	AAldeano();
-	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
-	//void HarvestFood();
-	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
-	//void HarvestMinerals();
-	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
-	//void ReturnHome();
-	//UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
+
+	//UFUNCTION(BlueprintNativeEvent, Category = "Aldeano")
+	//void BuildBuilding();
+	//UFUNCTION(BlueprintNativeEvent, Category = "Aldeano")
+	//void Harvest();
+	////UFUNCTION(BlueprintImplementableEvent, Category = "Aldeano")
+	////void ReturnHome();
+	//UFUNCTION(BlueprintNativeEvent, Category = "Aldeano")
 	//void Die();
 
 

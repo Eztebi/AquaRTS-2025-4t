@@ -4,10 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "ISelectionBuilding.h"
 #include "Building.generated.h"
 
 UCLASS(Abstract)
-class AQUARTS_API ABuilding : public AActor
+class AQUARTS_API ABuilding : public AActor, public IISelectionBuilding
 {
 	GENERATED_BODY()
 	
