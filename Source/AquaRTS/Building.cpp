@@ -18,14 +18,6 @@ void ABuilding::BeginPlay()
 	
 }
 
-void ABuilding::BuildBuilding_Implementation()
-{
-}
-
-void ABuilding::CreateTrops_Implementation()
-{
-}
-
 // Called every frame
 void ABuilding::Tick(float DeltaTime)
 {
