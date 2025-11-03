@@ -35,11 +35,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	// Estos deben coincidir con los nombres exactos de la interfaz Blueprint
-	UFUNCTION(BlueprintNativeEvent, Category = "Troop")
+	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
 	void ReceiveDamage(float Damage);
-	virtual void ReceiveDamage_Implementation(float Damage);
 
-	UFUNCTION(BlueprintNativeEvent, Category = "Troop")
+	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
 	void Move();
-	virtual void Move_Implementation();
 };

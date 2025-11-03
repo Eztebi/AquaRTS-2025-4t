@@ -29,7 +29,12 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+
+public:	
 	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
+	void RecieveDamage_BP();
+
+	UFUNCTION(BlueprintCallable, Category = "Building")
 	void RecieveDamage();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
@@ -38,7 +43,8 @@ protected:
 	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
 	void CreateTrops();
 
-public:	
+	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
+	void RightClicked();
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 

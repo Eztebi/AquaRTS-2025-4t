@@ -18,6 +18,11 @@ void ABuilding::BeginPlay()
 	
 }
 
+void ABuilding::RecieveDamage()
+{
+	RecieveDamage_BP();
+}
+
 // Called every frame
 void ABuilding::Tick(float DeltaTime)
 {

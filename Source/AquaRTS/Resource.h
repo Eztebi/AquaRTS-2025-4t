@@ -23,10 +23,12 @@ public:
 	// Sets default values for this actor's properties
 	AResource();
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cost")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ResourceType")
 	int resourceGiven;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cost")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ResourceType")
 	EResourceType typeResource;
+	UFUNCTION(BlueprintImplementableEvent, Category = "Resource")
+	void RightClicked();
 
 protected:
 	// Called when the game starts or when spawned
