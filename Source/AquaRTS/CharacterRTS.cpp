@@ -26,11 +26,19 @@ void ACharacterRTS::Tick(float DeltaTime)
 
 }
 
-// Called to bind functionality to input
-void ACharacterRTS::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ACharacterRTS::ReceiveDamage(float Damage)
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	ReceiveDamage_BP(Damage);
+}
 
+void ACharacterRTS::Action(AActor* tempTarget)
+{
+	Action_BP(tempTarget);
+}
+
+void ACharacterRTS::Move(FVector location)
+{
+	Move_BP(location);
 }
 
 

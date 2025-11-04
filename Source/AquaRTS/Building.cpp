@@ -23,6 +23,16 @@ void ABuilding::RecieveDamage()
 	RecieveDamage_BP();
 }
 
+void ABuilding::BuildBuilding()
+{
+	BuildBuilding_BP();
+}
+
+void ABuilding::CreateTrops()
+{
+	CreateTrops_BP();
+}
+
 // Called every frame
 void ABuilding::Tick(float DeltaTime)
 {

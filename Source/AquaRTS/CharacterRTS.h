@@ -30,14 +30,28 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
 	float movementSpeed;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	AActor* target;
+
 public:
 	virtual void Tick(float DeltaTime) override;
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	// Estos deben coincidir con los nombres exactos de la interfaz Blueprint
 	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
+	void ReceiveDamage_BP(float Damage);
+
+	UFUNCTION(BlueprintCallable, Category = "Troop")
 	void ReceiveDamage(float Damage);
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
-	void Move();
+	void Move_BP(FVector location);
+
+	UFUNCTION(BlueprintCallable, Category = "Troop")
+	void Move(FVector location);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
+	void Action_BP(AActor* tempTarget);
+
+	UFUNCTION(BlueprintCallable, Category = "Troop")
+	void Action(AActor* tempTarget);
 };

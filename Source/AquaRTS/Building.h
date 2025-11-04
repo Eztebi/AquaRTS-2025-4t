@@ -38,9 +38,15 @@ public:
 	void RecieveDamage();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
+	void BuildBuilding_BP();
+
+	UFUNCTION(BlueprintCallable, Category = "Building")
 	void BuildBuilding();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
+	void CreateTrops_BP();
+
+	UFUNCTION(BlueprintCallable, Category = "Building")
 	void CreateTrops();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
