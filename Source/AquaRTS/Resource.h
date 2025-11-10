@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "ISelectionBuilding.h"
 #include "Resource.generated.h"
 
 UENUM(BlueprintType)
@@ -15,7 +14,7 @@ enum class EResourceType : uint8
 };
 
 UCLASS()
-class AQUARTS_API AResource : public AActor, public IISelectionBuilding
+class AQUARTS_API AResource : public AActor
 {
 	GENERATED_BODY()
 	

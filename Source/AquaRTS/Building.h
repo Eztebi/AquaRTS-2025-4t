@@ -49,8 +49,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Building")
 	void CreateTrops();
 
-	UFUNCTION(BlueprintImplementableEvent, Category = "Building")
-	void RightClicked();
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
