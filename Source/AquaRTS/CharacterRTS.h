@@ -17,7 +17,10 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
+	FString name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
+	FString description;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cost")
 	int mineral;
 

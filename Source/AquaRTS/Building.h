@@ -13,6 +13,10 @@ class AQUARTS_API ABuilding : public AActor, public IISelectionBuilding
 	GENERATED_BODY()
 	
 public:	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
+	FString name;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
+	FString description;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cost")
 	int mineral;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cost")
