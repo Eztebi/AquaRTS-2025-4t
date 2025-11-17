@@ -14,4 +14,6 @@ class AQUARTS_API AConstructor : public ACharacterRTS
 {
 	GENERATED_BODY()
 	
+public:
+	AConstructor();
 };

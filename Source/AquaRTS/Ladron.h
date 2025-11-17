@@ -14,4 +14,6 @@ class AQUARTS_API ALadron : public ACharacterRTS
 {
 	GENERATED_BODY()
 	
+public:
+	ALadron();
 };

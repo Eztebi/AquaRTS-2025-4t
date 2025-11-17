@@ -13,5 +13,6 @@ UCLASS()
 class AQUARTS_API ARecolector : public ACharacterRTS
 {
 	GENERATED_BODY()
-	
+public:
+	ARecolector();
 };

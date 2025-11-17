@@ -21,6 +21,8 @@ protected:
 	FString name;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
 	FString description;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
+	FString actionDescription;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cost")
 	int mineral;
 

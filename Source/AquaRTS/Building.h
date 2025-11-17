@@ -15,7 +15,7 @@ class AQUARTS_API ABuilding : public AActor, public IISelectionBuilding
 public:	
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
-	Fstring name;
+	FString name;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Description")
 	FString description;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Cost")
