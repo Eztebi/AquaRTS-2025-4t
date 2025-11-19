@@ -28,4 +28,8 @@ public:
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Selection")
 	void OnDeselected();
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Selection")
+	void OnSelectedMultiple();
+
 };

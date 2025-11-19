@@ -34,6 +34,11 @@ void ACharacterRTS::Action(AActor* tempTarget)
 	Action_BP(tempTarget);
 }
 
+void ACharacterRTS::Capture(AActor* resource)
+{
+	Capture_BP(resource);
+}
+
 void ACharacterRTS::Move(FVector location)
 {
 	Move_BP(location);

@@ -59,4 +59,10 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Troop")
 	void Action(AActor* tempTarget);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
+	void Capture_BP(AActor* resource);
+
+	UFUNCTION(BlueprintCallable, Category = "Troop")
+	void Capture(AActor* resource);
 };
