@@ -34,7 +34,8 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
 	float movementSpeed;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
+	bool isSafe;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats")
 	AActor* target;
 
