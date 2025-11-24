@@ -24,9 +24,9 @@ void ACharacterRTS::Tick(float DeltaTime)
 
 }
 
-void ACharacterRTS::ReceiveDamage(float Damage)
+void ACharacterRTS::Die()
 {
-	ReceiveDamage_BP(Damage);
+	Die_BP();
 }
 
 void ACharacterRTS::Action(AActor* tempTarget)

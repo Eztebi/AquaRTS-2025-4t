@@ -25,9 +25,9 @@ void AEnemyCharacterRTS::Tick(float DeltaTime)
 
 }
 
-void AEnemyCharacterRTS::ReceiveDamage(float Damage)
+void AEnemyCharacterRTS::Die()
 {
-	ReceiveDamage_BP(Damage);
+	Die_BP();
 }
 
 void AEnemyCharacterRTS::Action(AActor* tempTarget)

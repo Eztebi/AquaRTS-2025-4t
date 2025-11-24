@@ -44,10 +44,10 @@ public:
 
 	// Estos deben coincidir con los nombres exactos de la interfaz Blueprint
 	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
-	void ReceiveDamage_BP(float Damage);
+	void Die_BP();
 
 	UFUNCTION(BlueprintCallable, Category = "Troop")
-	void ReceiveDamage(float Damage);
+	void Die();
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Troop")
 	void Move_BP(FVector location);
