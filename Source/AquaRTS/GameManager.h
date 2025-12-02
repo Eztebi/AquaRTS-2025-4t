@@ -23,7 +23,8 @@ public:
 
     UPROPERTY(BlueprintReadWrite, Category = "RTS")
     int32 PlayerMineral = 0;
-
+    UPROPERTY(BlueprintReadWrite, Category = "RTS")
+    int32 Points = 0;
     UPROPERTY(BlueprintReadWrite, Category = "RTS")
     FString Objective;
 
